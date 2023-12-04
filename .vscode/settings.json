@@ -2,6 +2,8 @@
     "files.associations": {
         "unistd.h": "c",
         "features.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "page.h": "c",
+        "file.h": "c"
     }
 }

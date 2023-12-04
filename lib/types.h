@@ -26,15 +26,15 @@ typedef struct
 {
     int id;
     int date;
-    char title[MAX_TITLE_LENGTH + 1];
-    char text[MAX_TEXT_LENGTH + 1];
+    char *title;
+    char *text;
 } Page;
 
 typedef struct
 {
-    char email[MAX_EMAIL_LENGTH + 1];
-    char password[MAX_PASSWORD_LENGTH + 1];
-    Page *pages[MAX_USER_PAGES];
+    char *email;
+    char *password;
+    Page *pages;
 } User;
 
 #endif

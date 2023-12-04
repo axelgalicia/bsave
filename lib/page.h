@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-Page save_page(User user, Page page);
-Page read_page(User user, char *title);
+void save_page(User *user, Page *page);
+Page read_page(User *user, char *title);
 
 #endif

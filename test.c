@@ -1,75 +1,9 @@
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// #include "configs.h"
-// #include "types.h"
-// #include "diary.h"
-// #include "page.h"
-
-// void trigger_option(int option)
-// {
-//   switch (option)
-//   {
-//   case 1:
-//     write_new_page();
-//     break;
-//   case 2:
-//     break;
-//   case 3:
-//     break;
-//   default:
-//     break;
-//   }
-// }
-
-// void write_new_page()
-// {
-//   Page new_page = {0};
-
-//   new_page.date = 12122121;
-//   new_page.id = 1;
-//   new_page.title = "No title";
-//   new_page.text = "No text";
-//   printf("Initial value: %s", new_page.title);
-
-//   printf("\nTitle:\t");
-//   scanf("%s", new_page.title);
-
-//   printf("Title: %s\n", new_page.title);
-
-//   printf("\n\nText:\n\n");
-//   scanf("%10000[^~]", &new_page.text);
-
-//   // User user = {
-//   //     "axelgalicia",
-//   //     "pass",
-//   //     {0},
-//   // };
-
-//   // save_page(&user, &new_page);
-// }
-
-// void start_menu()
-// {
-//   printf("\n\n");
-//   printf("1. Write a new page\n");
-//   printf("2. Look for diary page\n");
-//   printf("3. Exit\n\n");
-//   printf("Option:");
-
-//   int selected_option = 0;
-
-//   scanf("%d", &selected_option);
-//   trigger_option(selected_option);
-// }
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define MAX_TITLE_SIZE 50
-#define MAX_TEXT_SIZE 1000
+#define MAX_TEXT_SIZE 10000
 #define MAX_PAGES 100
 #define MAX_USER_SIZE 50
 #define MAX_PASSWORD_SIZE 50
